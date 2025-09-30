@@ -1,59 +1,58 @@
-blade runner,
-green mile,
-airplane,
-big lebowski,
-the naked gun,
-martian,
-truman show,
-paris texas,
-wizards,
-days of heaven,
-indiana jone,
-thor ragnarok,
-schindlers list,
-jojo rabbit,
-lego batman!!!!!!!!!!,
-interstellar,
-oppenheimer,
-shawshank redemption,
-pulp fiction,
-harakiri,
-die hard,
-life of brian,
-dr strangelove,
-princess bride,
-12 angry men,
-forrest gump,
-terminator,
-terminator 2,
-blade runner 2049,
-inglorious basterds,
-groundhog day,
-braveheart,
-princess mononoke,
-spirited away,
-nimona,
-blazing saddles,
-arrival,
-grand budapest,
-dead poet society,
-wolf of wall street,
-everything everywhere all at once,
-once upon a time in hollywood,
-dune,
-dune pt 2,
-christmas vacation,
-home alone,
-porco rosso,
-crouching tiger hidden dragon,
-whiplash,
-a fish called wanda,
-the batman,
-lego movie,
+blade runner, 7.5 6.5 0
+green mile, 8.5 6.0 0
+airplane, 7.0 6.0 0
+big lebowski, 8.5 8.0 0
+the naked gun, 7.5 7.0 0
+the martian, 7.5 8.0 1
+truman show, 8.0 7.5 1
+paris texas, 9.0 4.0 0
+wizards, 7.5 7.5 0
+days of heaven, 8.0 3.0 0
+indiana jone ark, 7.5 7.0 1
+thor ragnarok, 7.0 7.0 1
+schindlers list, 9.0 7.0 0
+jojo rabbit, 6.5 5.0 0
+lego batman, 8.0 7.5 1
+interstellar, 8.0 7.5 0
+oppenheimer, 8.0 7.0 0
+shawshank redemption, 7.5 6.0 0
+pulp fiction, 8.0 7.0 0
+harakiri, 7.5 2.5 0
+life of brian, 7.0 5.5 0
+dr strangelove, 7.0 1.5 0
+princess bride, 9.0 8.5 1
+12 angry men, 8.0 6.0 0
+forrest gump, 7.5 4.0 0
+inglorious basterds, 7.5 6.0 0
+braveheart, 8.0 4.5 0
+princess mononoke, 8.0 6.0 0
+spirited away, 8.5 6.5 0
+nimona, 7.75 6.0 0
+blazing saddles, 6.5 5.0 0
+arrival, 7.5 5.5 0
+the grand budapest hotel, 8.0 5.5 0
+dead poets society, 8.5 6.5 0
+wolf of wall street, 7.5 6.5 0
+once upon a time in hollywood, 7.5 5.0 0
+dune, 8.0 8.0 0
+porco rosso, 7.5 3.5 0
+crouching tiger hidden dragon, 7.5 3.0 0
+whiplash, 7.5 7 0
+a fish called wanda, 7 5.5 0
+the batman, 7.5 8.75 0
+lego movie, 8 9 1
+tenet, 8 6.5 0
+inception, 8 6.5 0
 END OF LIST
 
 django unchained
 alien
 aliens
-
+ terminator
 hollow ween thing
+
+die hard
+christmas vacation
+home alone
+
+free bird

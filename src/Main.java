@@ -1,11 +1,39 @@
 import java.io.*;
+import java.util.Collections;
 import java.util.Objects;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.lang.Integer;
 
+enum sort{
+    QUAL,WANT,AVG
+}
+
 public class Main {
     public static void main(String[] args) {
+        Scanner inScn=new Scanner(System.in);
+        System.out.println("sort by quality (QUAL), want (WANT), or average (AVG)");
+        String inp=inScn.nextLine();
+        sort srt;
+        switch (inp) {
+            case "quality", "qual", "QUAL" -> {
+                System.out.println("sorting by quality");
+                srt = sort.QUAL;
+            }
+            case "want", "WANT" -> {
+                System.out.println("sorting by want");
+                srt = sort.WANT;
+            }
+            case "average", "avg", "AVG" -> {
+                System.out.println("sorting by average");
+                srt = sort.AVG;
+            }
+            case null, default -> {
+                System.out.println("invalid input, defaulting to average");
+                srt = sort.AVG;
+            }
+        }
+
         try{
             Scanner scn=new Scanner(new File("MOVEIS.txt"));
             Scanner numScn=new Scanner(new File("MOVEIS.txt"));
@@ -18,7 +46,7 @@ public class Main {
             numScn.close();
             System.out.println(lineNum+" movies to be queued");
 
-            PriorityQueue<Movie> pq=new PriorityQueue<>();
+            PriorityQueue<Movie> pq=new PriorityQueue<>(Collections.reverseOrder());
 
             for(int i=0;i<lineNum;i++){
                 scn.useDelimiter(",");
@@ -28,8 +56,8 @@ public class Main {
                 double qual=scn.nextDouble();
                 double want=scn.nextDouble();
                 String tempStr=scn.nextLine();
-                int watched=Integer.valueOf(tempStr.stripLeading());
-                Movie tempmv=new Movie(name,qual,want,watched);
+                int watched=Integer.parseInt(tempStr.stripLeading());
+                Movie tempmv=new Movie(name,qual,want,watched,srt);
                 pq.add(tempmv);
             }
             scn.close();
@@ -51,14 +79,25 @@ class Movie implements Comparable<Movie>{
     double want;
     Double avg;
     boolean watched;
-    double priority;
+    Integer priority;
 
-    public Movie(String nname,double qqual,double wwant,int wwatched){
+    public Movie(String nname,double qqual,double wwant,int wwatched, sort srt){
         name=nname;
         qual=qqual;
         want=wwant;
-        avg=(qual*(want*2))/3;
+        avg=(qual+(want*2))/3;
         watched=(wwatched!=0);
+        double temp;
+        if(srt==sort.QUAL){
+            temp=qqual*100;
+        }
+        else if(srt==sort.WANT){
+            temp=wwant*100;
+        }
+        else{
+            temp=avg*1000;
+        }
+        priority=(int)temp;
     }
 
     public String toString(){
